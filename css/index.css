@@ -1,0 +1,74 @@
+body { 
+	background-color: #1a1a1a; 
+	margin: 0; 
+ } 
+	
+ .player { 
+	max-width: 370px; 
+	margin: 0 auto; 
+ } 
+	
+ .timeline { 
+	display: flex; 
+	margin: 5px 0; 
+ } 
+	
+ .timeline-chunk { 
+	background-color: #717171; 
+	height: 3px; 
+	width: 100%; 
+	border-radius: 2px; 
+ } 
+	
+ .timeline-chunk + .timeline-chunk { 
+	margin-left: 4px; 
+ } 
+	
+ .timeline-chunk-active > timeline-chunk-inner, .timeline-chunk-active ~ .timeline-chunk > .timeline-chunk-inner { 
+	width: 0; 
+ } 
+	
+ .timeline-chunk-inner { 
+	height: inherit; 
+	background-color: #ffff; 
+	border-radius: inherit; 
+ } 
+	
+ .player-content-wrapper { 
+	position: relative; 
+ } 
+	
+ .player-content img { 
+	width: 100%; 
+ } 
+	
+ .player-chunk { 
+	display: none; 
+ } 
+	
+ .player-chunk-active { 
+	display: block; 
+ } 
+	
+ .player-chunk-switcher { 
+	position: absolute; 
+	height: 100%; 
+	width: 20%; 
+ } 
+	
+ .player-chunk-prev { 
+	top: 0; 
+	left: 0; 
+ } 
+	
+ .player-chunk-next { 
+	top: 0; 
+	right: 0; 
+ } 
+	
+	
+ .test { 
+	color: aqua; 
+	font-size: 25px; 
+	position: absolute; 
+ }
